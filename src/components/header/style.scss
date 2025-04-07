@@ -1,0 +1,21 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.header {
+    @include mixins.textH6;
+    background-color: var.$backgound-color-three;
+    padding: 12px 0;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+}
+

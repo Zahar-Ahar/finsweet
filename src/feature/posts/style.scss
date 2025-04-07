@@ -1,0 +1,21 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.posts {
+  display: flex;
+  gap: 40px;
+
+  .headline {
+    @include mixins.textH2;
+    color: var.$text-color-second;
+  }
+
+  .featuredPost {
+    width: 100%;
+  }
+
+  .allPosts {
+    width: 500px;
+    flex-shrink: 0;
+  }
+}

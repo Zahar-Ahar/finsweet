@@ -1,0 +1,12 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.menu {
+  display: flex;
+  gap: 24px;
+
+  &__el {
+    @include mixins.textH6;
+    color: var.$text-color-prime;
+  }
+}

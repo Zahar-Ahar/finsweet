@@ -1,0 +1,46 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url("../../asset/image/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__posted {
+    @include mixins.textH6;
+    color: var.$text-color-prime;
+  }
+
+  &__step {
+    @include mixins.Display;
+    color: var.$text-color-prime;
+  }
+
+  &__james {
+    @include mixins.textH6;
+    color: var.$text-color-prime;
+  }
+
+  &__duis {
+    @include mixins.textH6;
+    color: var.$text-color-prime;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+    height: 100vh;
+    width: 60%;
+  }
+}

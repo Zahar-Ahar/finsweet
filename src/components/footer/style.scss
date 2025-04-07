@@ -1,0 +1,20 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.footer {
+  padding-top: 60px;
+  background-color: var.$backgound-color-three;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

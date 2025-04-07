@@ -1,0 +1,42 @@
+@use "../../asset/styles/mixins";
+@use "../../asset/styles/var";
+
+.registration {
+  background: rgba(#ffffff, .05);
+  padding: 40px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__ContentText {
+    @include mixins.textH2;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  &__ContentForms {
+    max-width: 500px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+  }
+
+  &__User {
+    @include mixins.body01;
+    background: transparent;
+    border: 1px solid #4C4C4C;
+    width: 323px;
+    padding: 14px 25px;
+  }
+}

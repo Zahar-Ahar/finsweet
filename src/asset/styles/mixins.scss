@@ -1,0 +1,49 @@
+@mixin Display {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+@mixin textH1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@mixin textH2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin textH3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@mixin textH4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin textH5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin textH6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@mixin body01 {
+  font-size: 16px;
+  font-weight: 28;
+}
+
+@mixin body02 {
+  font-size: 14px;
+  font-weight: 20;
+}
+
+@mixin label {
+  font-size: 14px;
+  font-weight: 20;
+}

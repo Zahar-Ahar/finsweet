@@ -1,0 +1,17 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.button {
+  @include mixins.body01;
+  padding: 16px 48px;
+  border: 0 none;
+  cursor: pointer;
+
+  &.main {
+    background-color: var.$backgound-color-prime;
+  }
+
+  &.white {
+    background-color: var.$backgound-color-second;
+  }
+}
