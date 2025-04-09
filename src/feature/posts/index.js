@@ -12,8 +12,13 @@ export default function Posts() {
                     <Post isBig={true}/>
                 </div>
                 <div className={'allPosts'}>
-                    <div className={'headline'}>
-                        All Post
+                    <div className={'allPosts__info'}>
+                        <div className={'headline'}>
+                            All Post
+                        </div>
+                        <a className={'link'} href={'http://ya.ru'} target={'_blank'}>
+                            View All
+                        </a>
                     </div>
                     <Post/>
                     <Post/>
