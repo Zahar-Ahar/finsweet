@@ -47,3 +47,9 @@
   font-size: 14px;
   font-weight: 20;
 }
+
+@mixin cap1 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}

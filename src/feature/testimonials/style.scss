@@ -1,0 +1,124 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.testimonials {
+  background-color: #FBF6EA;
+  height: 464px;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    padding-right: 80px;
+    width: 450px;
+    flex-shrink: 0;
+
+    .title {
+      @include mixins.cap1;
+      color: var.$text-color-second;
+    }
+
+    .headline {
+      @include mixins.textH2;
+      color: var.$text-color-second;
+    }
+
+    .description {
+      @include mixins.body01;
+      color: var.$text-color-second;
+    }
+
+  }
+
+  &__post {
+    border-left: 1px solid var.$border-color-tree;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 80px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+
+    .info {
+      @include mixins.textH3;
+      color: var.$text-color-second;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &__picture {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          @include mixins.textH4;
+          color: var.$text-color-second;
+        }
+
+        .location {
+          @include mixins.body01;
+          color: var.$border-color-tree;
+        }
+      }
+    }
+
+    .slider {
+      width: 100%;
+
+    }
+
+    .slick-arrow {
+      position: absolute;
+      z-index: 2;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      transform: none;
+      height: 48px;
+      width: 48px;
+      background: var.$backgound-color-second;
+      background-image: url("../../asset/icons/arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+
+      &:hover {
+        background: var.$backgound-color-prime;
+        background-image: url("../../asset/icons/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &.slick-prev {
+        right: 70px;
+      }
+
+      &.slick-next {
+        transform: rotate(180deg);
+      }
+
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

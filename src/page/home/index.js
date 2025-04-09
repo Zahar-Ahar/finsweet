@@ -1,15 +1,7 @@
-import Header from "../../components/header";
 import Banner from "../../feature/banner";
 import Category from "../../feature/category";
-import FeaturedPost from "../../feature/posts";
-import {Component} from "react";
 import Posts from "../../feature/posts";
-
-class Post extends Component {
-    render() {
-        return null;
-    }
-}
+import Testimonials from "../../feature/testimonials";
 
 export default function Home() {
     return (
@@ -17,6 +9,7 @@ export default function Home() {
             <Banner/>
             <Posts/>
             <Category/>
+            <Testimonials/>
         </div>
     )
 }
