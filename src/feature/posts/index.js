@@ -1,5 +1,6 @@
 import './style.scss'
 import Post from "../../components/post";
+import {NavLink} from "react-router";
 
 export default function Posts() {
     return (
@@ -16,9 +17,9 @@ export default function Posts() {
                         <div className={'headline'}>
                             All Post
                         </div>
-                        <a className={'link'} href={'http://ya.ru'} target={'_blank'}>
+                        <NavLink to={'/blog'} className={'link'} end>
                             View All
-                        </a>
+                        </NavLink>
                     </div>
                     <Post/>
                     <Post/>

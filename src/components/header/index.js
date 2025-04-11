@@ -10,7 +10,25 @@ export default function Header() {
                 <div className="header__info">
                     <img src={Logo} alt="/"/>
                     <div className={'header__actions'}>
-                        <Menu menuElements={[ 'Home', 'Blog', 'About us', 'Contact us' ]}/>
+                        {/*<Menu menuElements={[ 'Home', 'Blog', 'About us', 'Contact us' ]}/>*/}
+                        <Menu menuElements={[
+                            {
+                                link: '/',
+                                text: 'Home'
+                            },
+                            {
+                                link: '/blog',
+                                text: 'Blog'
+                            },
+                            {
+                                link: '/about',
+                                text: 'About us'
+                            },
+                            {
+                                link: '/contact',
+                                text: 'Contact us'
+                            },
+                        ]}/>
                         <Button type={'white'}>
                             Subscribe
                         </Button>

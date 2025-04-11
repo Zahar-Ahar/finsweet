@@ -8,5 +8,6 @@
   &__el {
     @include mixins.textH6;
     color: var.$text-color-prime;
+    text-decoration: none;
   }
 }

@@ -1,0 +1,20 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.listOfAuthors {
+  text-align: center;
+  margin-top: 90px;
+
+  &__headline {
+    color: var.$text-color-second;
+    @include mixins.textH2;
+    padding-bottom: 48px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}

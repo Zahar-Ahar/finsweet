@@ -14,12 +14,6 @@
     @include mixins.body01;
     color: #ffffff;
     opacity: 70%;
-  }
-
-  &__socialNetworks {
-    display: flex;
-    justify-content: flex-end;
-    gap: 26px;
 
     img {
       width: 16px;

@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Floyd Miles",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "linkedin",
+      "facebook",
+      "twitter"
+    ]
+  },
+  {
+    "name": "Dianne Russell",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "linkedin",
+      "instagram",
+      "twitter"
+    ]
+  },
+  {
+    "name": "Jenny Wilson",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "linkedin",
+      "instagram"
+    ]
+  },
+  {
+    "name": "Leslie Alexander",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "instagram",
+      "facebook"
+    ]
+  },
+  {
+    "name": "Guy Hawkins",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "instagram",
+      "twitter",
+      "facebook"
+    ]
+  },
+  {
+    "name": "Eleanor Pena",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "linkedin",
+      "instagram"
+    ]
+  },
+  {
+    "name": "Robert Fox",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "linkedin",
+      "instagram",
+      "facebook"
+    ]
+  },
+  {
+    "name": "Jacob Jones",
+    "position": "Content Writer",
+    "company": "@Company",
+    "socials": [
+      "twitter",
+      "linkedin",
+      "facebook"
+    ]
+  }
+]

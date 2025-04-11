@@ -11,7 +11,28 @@ export default function Footer() {
                 <div className={'footer__info'}>
                     <div className={'footer__top'}>
                         <img src={Logo} alt="/"/>
-                        <Menu menuElements={[ 'Home', 'Blog', 'About us', 'Contact us', 'Privacy Policy' ]}/>
+                        <Menu menuElements={[
+                            {
+                                link: '/',
+                                text: 'Home'
+                            },
+                            {
+                                link: '/blog',
+                                text: 'Blog'
+                            },
+                            {
+                                link: '/about',
+                                text: 'About us'
+                            },
+                            {
+                                link: '/contact',
+                                text: 'Contact us'
+                            },
+                            {
+                                link: '/privacy-policy',
+                                text: 'Privacy Policy'
+                            },
+                        ]}/>
                     </div>
                     <Registration/>
                     <PrivacyPolicy/>

@@ -1,0 +1,39 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.card {
+  width: calc((100% / 4) - (32px * 3 / 4));
+  height: 324px;
+  background-color: var.$backgound-color-card;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 28px;
+  cursor: pointer;
+  transition: .3s;
+
+  .profileIcon {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+  }
+
+  .name {
+    @include mixins.textH3;
+    color: var.$text-color-second;
+  }
+
+  .major {
+    @include mixins.body02;
+    color: var.$text-color-three;
+  }
+
+  &__socialNetworks{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &:hover {
+    background-color: var.$backgound-color-card-active;
+  }
+}

@@ -1,0 +1,46 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .previewImage {
+    width: 490px;
+    height: 318px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 624px;
+    margin-left: 32px;
+    gap: 20px;
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 16px;
+    }
+
+    &__category {
+      @include mixins.cap1;
+      color: var.$text-color-title;
+    }
+
+    &__name {
+      @include mixins.textH2;
+      color: var.$text-color-second;
+
+    }
+
+    &__description {
+      @include mixins.body01;
+      color: var.$text-color-three;
+    }
+  }
+}

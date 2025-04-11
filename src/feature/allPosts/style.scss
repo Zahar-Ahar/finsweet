@@ -1,0 +1,24 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.allPosts {
+  display: flex;
+  flex-direction: column;
+
+  &__headline {
+    @include mixins.textH1;
+    color: var.$text-color-second;
+    width: 100%;
+    border-bottom: 1px solid var.$border-color-tree;
+    padding-bottom: 32px;
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-right: 136px;
+    width: 100%;
+    padding-top: 64px;
+  }
+}
