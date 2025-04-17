@@ -1,0 +1,41 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.ourContacts {
+  background-color: var.$backgound-color-contacts;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 5%;
+
+  &__el {
+    width: calc((100% / 2) - (42px * 1 / 2));
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+
+    .title {
+      @include mixins.body02;
+      color: var.$text-color-prime-opacity;
+      border-bottom: 1px solid var.$border-color-contacts;
+    }
+
+    .headline {
+      @include mixins.textH5;
+      color: var.$text-color-prime;
+    }
+
+    .description {
+      @include mixins.body01;
+      color: var.$text-color-prime-opacity;
+    }
+
+    .socials  {
+      display: flex;
+      justify-content: start;
+    }
+  }
+}

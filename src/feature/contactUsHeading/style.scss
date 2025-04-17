@@ -1,0 +1,33 @@
+@use "src/asset/styles/mixins";
+@use "src/asset/styles/var";
+
+.contactUsHeading {
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      @include mixins.cap1;
+      color: var.$text-color-second;
+    }
+
+    .headline {
+      @include mixins.textH1;
+      color: var.$text-color-second;
+    }
+  }
+
+  &__description {
+    @include mixins.body01;
+    color: var.$text-color-three;
+  }
+}
